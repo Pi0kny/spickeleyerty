@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("Bloxfruits Script Hub", "Ocean")
+local Window = Library.CreateLib("Bloxfruits Script Hub", "GrapeTheme")
 
 local Player = Window:NewTab("Player")
 local PlayerSection = Player:NewSection("Player Hacks")
@@ -34,7 +34,7 @@ end)
 Autofarm:NewButton("Player Hunter Script", "Launches the Player Hunter Script.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Legenda06/blox-fruits/main/chida"))()
 end)
-
+wd
 local FruitFinder = Window:NewTab("Fruit Finder")
 local FruitFinderSection = FruitFinder:NewSection("Fruit Farms:")
 
