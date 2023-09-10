@@ -18,8 +18,12 @@ end)
 local FruitFinder = Window:NewTab("Fruit Finder")
 local FruitFinderSection = FruitFinder:NewSection("Fruit Farms:")
 
-FruitFinderSection:NewButton("Fruit Finder", "Launches the Fruit Finder Script", function()
+FruitFinderSection:NewButton("Fruit Finder #1", "Launches the Fruit Finder #1 Script", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/wGkLw2Ta"))()
+end)
+
+FruitFinderSection:NewButton("Fruit Finder #2", "Launches the Fruit Finder #2 Script", function()
+    loadstring(game:HttpGet"https://gist.githubusercontent.com/NotHubris/4e6fdc88d84c30afa9b28c590f273bbf/raw")()
 end)
 
 local Miscellaneous = Window:NewTab("Miscellaneous")
