@@ -1,3 +1,4 @@
+if game.PlaceId == 2753915549 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
 local Window = Library.CreateLib("Bloxfruits Script Hub", "GrapeTheme")
@@ -31,12 +32,12 @@ MiscellaneousSection:NewButton("Reset", "Reset your character", function()
     game.Players.LocalPlayer.Character.Head:Destroy()
 end)
 
-MiscellaneousSection:NewSlider("Player Speed", "Changes Player Walkspeed.", 500, 0, function(s) 
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+MiscellaneousSection:NewSlider("Player Speed", "Changes Player Walkspeed.", 500, 0, function(v) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
 end)
 
-MiscellaneousSection:NewSlider("Player Jump", "Changes Player Jump Height.", 500, 0, function(s) 
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+MiscellaneousSection:NewSlider("Player Jump", "Changes Player Jump Height.", 500, 0, function(v) 
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
 
 MiscellaneousSection:NewButton("Infinite Jump Script", "Allows you to Infinitely Jump", function()
@@ -70,3 +71,5 @@ CreditSection:NewLabel("Scripter: Piokny")
 CreditSection:NewLabel("Script Tester: Fataldarksage")
 CreditSection:NewLabel("Our Discord: (Code here)")
 CreditSection:NewLabel("Last Updated: 9/10/2023")
+
+end
