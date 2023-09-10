@@ -35,7 +35,10 @@ Autofarm:NewButton("Player Hunter Script", "Launches the Player Hunter Script.",
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Legenda06/blox-fruits/main/chida"))()
 end)
 
-Autofarm:NewButton("Fruit Finder", "Launches the Fruit Finder Script", function()
+local FruitFinder = Window:NewTab("Fruit Finder")
+local FruitFinderSection = FruitFinder:NewSection("Fruit Farms:")
+
+FruitFinderSection:NewButton("Fruit Finder", "Launches the Fruit Finder Script", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/wGkLw2Ta"))()
 end)
 
@@ -45,4 +48,4 @@ local CreditSection = CreditTab:NewSection("Created By:")
 CreditSection:NewLabel("Scripter: Piokny")
 CreditSection:NewLabel("Tester: Fataldarksage")
 CreditSection:NewLabel("Our Discord: (Code here)")
-CreditSection:NewLabel("Last Updated: 9/9/2023")
+CreditSection:NewLabel("Last Updated: 9/10/2023")
