@@ -2,28 +2,8 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 
 local Window = Library.CreateLib("Bloxfruits Script Hub", "GrapeTheme")
 
-local Player = Window:NewTab("Player")
-local PlayerSection = Player:NewSection("Player Hacks")
+local Main = Window:NewTab("Main")
 
-PlayerSection:NewButton("Reset", "Reset your character", function()
-    game.Players.LocalPlayer.Character.Head:Destroy()
-end)
-
-PlayerSection:NewSlider("Player Speed", "Changes Player Walkspeed.", 500, 0, function(s) 
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
-
-PlayerSection:NewSlider("Player Jump", "Changes Player Jump Height.", 500, 0, function(s) 
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-end)
-
-PlayerSection:NewButton("Infinite Jump Script", "Allows you to Infinitely Jump", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/V3DKCQTT"))()
-end)
-
-PlayerSection:NewButton("Serverhop", "Serverhops to the smallest server.", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/ze1NtMkp"))()
-end)
 local Autofarm = Window:NewTab("Autofarm")
 local Autofarm = Autofarm:NewSection("Autofarm")
 
@@ -42,10 +22,45 @@ FruitFinderSection:NewButton("Fruit Finder", "Launches the Fruit Finder Script",
     loadstring(game:HttpGet("https://pastebin.com/raw/wGkLw2Ta"))()
 end)
 
+local Miscellaneous = Window:NewTab("Miscellaneous")
+local MiscellaneousSection = Miscellaneous:NewSection("Miscellaneous Hacks:")
+
+MiscellaneousSection:NewButton("Reset", "Reset your character", function()
+    game.Players.LocalPlayer.Character.Head:Destroy()
+end)
+
+MiscellaneousSection:NewSlider("Player Speed", "Changes Player Walkspeed.", 500, 0, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+MiscellaneousSection:NewSlider("Player Jump", "Changes Player Jump Height.", 500, 0, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+MiscellaneousSection:NewButton("Infinite Jump Script", "Allows you to Infinitely Jump", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/V3DKCQTT"))()
+end)
+
+MiscellaneousSection:NewButton("Serverhop", "Serverhops to the smallest server.", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ze1NtMkp"))()
+end)
+
+MiscellaneousSection:NewButton("Infinite Yield Admin", "Gives Inf Yield admin commands.", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+MiscellaneousSection:NewButton("Cmd-X Admin", "Gives Cmd-X admin  commands.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+MiscellaneousSection:NewButton("Fates Admin", "Gives Fates admin  commands.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end)
+
 local CreditTab = Window:NewTab("Credits")
 local CreditSection = CreditTab:NewSection("Created By:")
 
 CreditSection:NewLabel("Scripter: Piokny")
-CreditSection:NewLabel("Tester: Fataldarksage")
+CreditSection:NewLabel("Script Tester: Fataldarksage")
 CreditSection:NewLabel("Our Discord: (Code here)")
 CreditSection:NewLabel("Last Updated: 9/10/2023")
