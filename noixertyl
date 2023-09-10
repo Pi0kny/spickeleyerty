@@ -3,6 +3,10 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 
 local Window = Library.CreateLib("Bloxfruits Script Hub", "GrapeTheme")
 
+local Disclaimer = Window:NewTab("DISCLAIMER")
+local DisclaimerSection = Disclaimer:NewSection("Please Keep In Mind:")
+DisclaimerSection:NewLabel("We are not held responsible if you are banned.")
+
 local Autofarm = Window:NewTab("Autofarm")
 local Autofarm = Autofarm:NewSection("Autofarm")
 
@@ -16,6 +20,10 @@ end)
 
 Autofarm:NewButton("Auto Raid", "Launches the Auto Raid Script.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/free-script/main/SMZHUBv2BETA"))()
+end)
+
+Autofarm:NewButton("Bunch O Stuff", "Launches the Bunch O Stuff Script.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Farn2000/ShuShiScriptHubRenew/main/ShuShiScriptHub"))()
 end)
 
 local FruitFinder = Window:NewTab("Fruit Finder")
@@ -67,10 +75,6 @@ end)
 MiscellaneousSection:NewButton("Fates Admin", "Gives Fates admin  commands.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 end)
-
-local Disclaimer = Window:NewTab("DISCLAIMER")
-local DisclaimerSection = Disclaimer:NewSection("Please Keep In Mind:")
-DisclaimerSection:NewLabel("We are not held responsible if you are banned.")
 
 local CreditTab = Window:NewTab("Credits")
 local CreditSection = CreditTab:NewSection("Created By:")
