@@ -34,7 +34,7 @@ end)
 Autofarm:NewButton("Player Hunter Script", "Launches the Player Hunter Script.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Legenda06/blox-fruits/main/chida"))()
 end)
-wd
+
 local FruitFinder = Window:NewTab("Fruit Finder")
 local FruitFinderSection = FruitFinder:NewSection("Fruit Farms:")
 
