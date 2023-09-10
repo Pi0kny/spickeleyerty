@@ -14,6 +14,10 @@ Autofarm:NewButton("Player Hunter Script", "Launches the Player Hunter Script.",
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Legenda06/blox-fruits/main/chida"))()
 end)
 
+Autofarm:NewButton("Auto Raid", "Launches the Auto Raid Script.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/free-script/main/SMZHUBv2BETA"))()
+end)
+
 local FruitFinder = Window:NewTab("Fruit Finder")
 local FruitFinderSection = FruitFinder:NewSection("Fruit Farms:")
 
@@ -48,6 +52,10 @@ MiscellaneousSection:NewButton("Serverhop", "Serverhops to the smallest server."
     loadstring(game:HttpGet("https://pastebin.com/raw/ze1NtMkp"))()
 end)
 
+MiscellaneousSection:NewButton("Boost FPS", "Boosts FPS, good when you're AFK.", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ArbaVHk6"))()
+end)
+    
 MiscellaneousSection:NewButton("Infinite Yield Admin", "Gives Inf Yield admin commands.", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
