@@ -2,8 +2,6 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 
 local Window = Library.CreateLib("Bloxfruits Script Hub", "GrapeTheme")
 
-local Main = Window:NewTab("Main")
-
 local Autofarm = Window:NewTab("Autofarm")
 local Autofarm = Autofarm:NewSection("Autofarm")
 
@@ -60,6 +58,10 @@ end)
 MiscellaneousSection:NewButton("Fates Admin", "Gives Fates admin  commands.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 end)
+
+local Disclaimer = Window:NewTab("DISCLAIMER")
+local DisclaimerSection = Disclaimer:NewSection("Please Keep In Mind:")
+DisclaimerSection:NewLabel("We are not held responsible if you are banned.")
 
 local CreditTab = Window:NewTab("Credits")
 local CreditSection = CreditTab:NewSection("Created By:")
