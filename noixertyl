@@ -82,6 +82,6 @@ local CreditSection = CreditTab:NewSection("Created By:")
 CreditSection:NewLabel("Scripter: Piokny")
 CreditSection:NewLabel("Script Tester: Fataldarksage")
 CreditSection:NewLabel("Our Discord: (Code here)")
-CreditSection:NewLabel("Last Updated: 9/10/2023")
+CreditSection:NewLabel("Last Updated: 9/10/203")
 
 end
